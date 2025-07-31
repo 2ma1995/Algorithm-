@@ -4,10 +4,12 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int cnt = 0;
+        
         for(int i =1; i<=10; i++){
             n/=i;
             cnt++;          
-            if(n<=0){  
+
+            if(n<=1){  
                 break;
             }
         }
