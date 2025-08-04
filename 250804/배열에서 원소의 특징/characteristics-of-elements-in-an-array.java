@@ -1,16 +1,20 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        // Please write your code here.
         Scanner sc = new Scanner(System.in);
         int[] arr = new int[10];
 
-        for (int i =0; i< 10; i++){
+        for (int i = 0; i < 10; i++) {
             arr[i] = sc.nextInt();
-            if(i%3==2){
-                System.out.print(arr[i-1]);
+        }
+
+        for (int i = 0; i < 10; i++) {
+            if (arr[i] % 3 == 0 && i > 0) { 
+                System.out.println(arr[i - 1]);
                 break;
             }
         }
+
+        sc.close();
     }
 }
