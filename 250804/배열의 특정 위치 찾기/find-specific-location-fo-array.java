@@ -19,6 +19,6 @@ public class Main {
             }
         }
         avg = sum3/(float)sum3count;
-        System.out.print(sum + " " + avg);
+        System.out.printf("%d %.1f",sum,avg);
     }
 }
